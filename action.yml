@@ -1,0 +1,12 @@
+# action.yml
+name: 'VUnit'
+description: 'Automatically test your vhdl code with VUnit'
+inputs:
+  run_file:
+    description: 'python vunit run file'
+    default: 'run.py'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.run_file }}
