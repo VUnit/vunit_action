@@ -1,0 +1,13 @@
+name: Test Github Action
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+    steps:
+      - name: Run VUnit tests
+        uses: ./
+        with:
+          run_file: test/run.py
