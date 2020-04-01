@@ -1,5 +1,5 @@
 # action.yml
-name: 'VUnit'
+name: 'VUnit Action'
 description: 'Automatically test your vhdl code with VUnit'
 inputs:
   run_file:
@@ -10,3 +10,6 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.run_file }}
+branding:
+  icon: cpu
+  color: blue
