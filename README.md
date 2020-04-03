@@ -1,6 +1,6 @@
 # Vunit GitHub action
 
-This action tests your vhdl code with vunit!
+This action tests your vhdl and verilog code with vunit!
 
 ## Inputs
 
