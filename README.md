@@ -1,6 +1,6 @@
-# Vunit GitHub action
+# VUnit GitHub action
 
-This action tests your vhdl and verilog code with vunit!
+This action tests your vhdl and verilog code with VUnit!
 
 ## Inputs
 
@@ -10,7 +10,7 @@ This action tests your vhdl and verilog code with vunit!
 
 ## Example usage
 ```
-uses: MarcoIeni/vunit-action@master
+uses: VUnit/vunit_action@master
 with:
   run_file: path/to/run.py
 ```

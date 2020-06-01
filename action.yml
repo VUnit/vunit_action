@@ -3,7 +3,7 @@ name: 'VUnit Action'
 description: 'Automatically test your vhdl code with VUnit'
 inputs:
   run_file:
-    description: 'python vunit run file'
+    description: 'python VUnit run file'
     default: 'run.py'
 runs:
   using: 'docker'
