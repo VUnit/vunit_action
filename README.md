@@ -1,3 +1,26 @@
+<p align="center">
+  <a title="vunit.github.io"
+     href="http://vunit.github.io"
+  ><img src="https://img.shields.io/website.svg?label=vunit.github.io&longCache=true&style=flat-square&url=http%3A%2F%2Fvunit.github.io%2Findex.html"
+  /></a><!--
+  -->
+  <a title="Join the chat at https://gitter.im/VUnit/vunit"
+     href="https://gitter.im/VUnit/vunit"
+  ><img src="https://img.shields.io/gitter/room/VUnit/vunit.svg?longCache=true&style=flat-square&logo=gitter&logoColor=4db797&color=4db797"
+  /></a><!--
+  -->
+  <a title="@VUnitFramework"
+     href="https://www.twitter.com/VUnitFramework"
+  ><img src="https://img.shields.io/twitter/follow/VUnitFramework.svg?longCache=true&style=flat-square&color=1DA1F2&label=%40VUnitFramework&logo=twitter&logoColor=fff"
+  /></a><!--
+  -->
+  <a title="'Test' workflow Status"
+     href="https://github.com/VUnit/vunit_action/actions?query=workflow%3ATest"
+  ><img alt="'Test' workflow Status" src="https://img.shields.io/github/workflow/status/VUnit/vunit_action/Test?longCache=true&style=flat-square&label=Test"
+  /></a>
+</p>
+
+
 # VUnit and GitHub Actions
 
 This repository showcases several approaches for using VUnit in GitHub Actions. Subdir [test](test) contains the sources of an example HDL design, which is tested in the reference workflow: [.github/workflows/test.yml](.github/workflows/test.yml).
