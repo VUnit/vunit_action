@@ -1,12 +1,39 @@
-name: Test Github Action
-on: [push, pull_request]
+name: Test
+
+on:
+  push:
+  pull_request:
+
 jobs:
-  test:
+
+  action:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
-        uses: actions/checkout@v2
-      - name: Run VUnit tests
-        uses: ./
-        with:
-          run_file: test/run.py
+
+    - uses: actions/checkout@v2
+
+    - name: Run VUnit tests
+      uses: ./
+      with:
+        run_file: test/run.py
+
+
+  container-job:
+    runs-on: ubuntu-latest
+    container: ghdl/vunit:mcode-master
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - run: test/run.py
+
+
+  container-step:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - uses: docker://ghdl/vunit:mcode-master
+      with:
+        args: test/run.py
