@@ -15,7 +15,7 @@ jobs:
     - name: Run VUnit tests
       uses: ./
       with:
-        run_file: test/run.py
+        cmd: test/run.py
 
 
   container-job:
