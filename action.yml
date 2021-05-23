@@ -4,7 +4,7 @@ description: 'Automatically test your VHDL code with VUnit'
 inputs:
   cmd:
     description: 'VUnit run script or command (Python)'
-    default: 'run.py'
+    default: './run.py'
   image:
     description: 'Container image to run the script/command on'
     default: ghdl/vunit:mcode
